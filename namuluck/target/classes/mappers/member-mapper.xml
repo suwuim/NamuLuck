@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="memberMapper">
+	<resultMap type="Member" id="resultMember">
+		<result column="user_no" property="userNo" />
+		<result column="user_id" property="userId" />
+		<result column="user_pwd" property="userPwd" />
+		<result column="user_name" property="userName" />
+		<result column="nickname" property="nickName" />
+		<result column="email" property="email" />
+		<result column="phone" property="phone" />
+		<result column="sum_point" property="sumPoint" />
+		<result column="water" property="water" />
+		<result column="address" property="address" />
+	</resultMap>
+  
+	<insert id="insertMember" parameterType="Member">
+		insert
+		  into member
+		  	 (
+		  	   user_no 
+		  	 , user_id
+		  	 , user_pwd
+		  	 , user_name
+		  	 , nickname
+		  	 , email
+		  	 , gender
+		  	 , phone
+		  	 )
+		values 
+		     (
+		       user_no_seq.nextval
+		     , #{ userId }
+		     , #{ userPwd }
+		     , #{ userName }
+		     , #{ nickName }
+		     , #{ email }
+		     , #{ gender }
+		     , #{ phone }
+		     )
+	</insert>
+	<insert id="insertMemberKakao" parameterType="Member">
+		insert
+		  into member
+		  	 (
+		  	   user_no 
+		  	 , user_id
+		  	 , user_pwd
+		  	 , user_name
+		  	 , nickname
+		  	 , email
+		  	 , social
+		  	 )
+		values 
+		     (
+		       SEQ_MNO.nextval
+		     , #{ userId }
+		     , #{ userPwd }
+		     , #{ userName }
+		     , #{ nickName }
+		     , #{ email }
+		     , 'kakao'
+		     )
+	</insert>
+	
+	<insert id="insertMemberGoogle" parameterType="Member">
+		insert
+		  into member
+		  	 (
+		  	   user_no 
+		  	 , user_id
+		  	 , user_pwd
+		  	 , user_name
+		  	 , nickname
+		  	 , email
+		  	 , social
+		  	 )
+		values 
+		     (
+		       SEQ_MNO.nextval
+		     , #{ userId }
+		     , #{ userPwd }
+		     , #{ userName }
+		     , #{ nickName }
+		     , #{ email }
+		     , 'google'
+		     )
+	</insert>
+	
+	<select id="loginMember" resultMap="resultMember">
+		select 
+		  	   user_no 
+		  	 , user_id
+		  	 , user_pwd
+		  	 , user_name
+		  	 , nickname
+		  	 , email
+		  	 , phone
+		  	 , gender
+		  	 , sum_point
+		  	 , water
+		  	 , address
+		  from member
+		 where user_id = #{userId}
+	</select>
+	
+	<select id="searchId" resultMap="resultMember">
+		select 
+		       user_no
+		     , user_id
+		     , user_pwd
+		     , user_name
+		     , nickname
+		     , email
+		     , gender
+		     , phone
+		     , description
+		     , profile_img
+		     , status
+		     , social
+		  from member
+		 where user_name = #{userName}
+		   and status = 'Y'
+	</select>
+	
+	<select id="searchPwd" resultMap="resultMember">
+		select 
+		       user_no
+		     , user_id
+		     , user_pwd
+		     , user_name
+		     , nickname
+		     , email
+		     , gender
+		     , phone
+		     , description
+		     , profile_img
+		     , status
+		     , social
+		  from member
+		 where user_id = #{userId}
+		   and status = 'Y'
+	</select>
+	
+	<update id="updateDescription">
+		update
+		       member
+		   set description = #{ description }
+		 where user_no = #{ userNo }
+	</update>
+	<update id="updateGender">
+		update
+		       member
+		   set gender = #{ gender }
+		 where user_no = #{ userNo }
+	</update>
+	
+	<update id="updateImg" parameterType="Member">
+		update
+		       member
+		   set profile_img = #{ profileImg }
+		 where user_no = #{ userNo }
+	</update>
+	
+	<select id="idCheck" resultType="_int">
+		select count(*)
+		  from member
+		 where user_id = #{ userId }
+	</select>
+	
+	<delete id="deleteMember" parameterType="String">
+	    DELETE FROM MEMBER
+	    WHERE USER_ID = #{userId}
+	</delete>
+
+</mapper>
