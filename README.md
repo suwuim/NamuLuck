@@ -10,6 +10,8 @@ NamuLuck
 - 퀴즈
 - 쇼핑
 - 마이페이지
+
+
 ![image](https://github.com/howooyeon/NamuLuck/assets/109477788/3d2e8046-ac86-44cd-a2fd-0a46fdbb5567)
 
 
