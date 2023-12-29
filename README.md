@@ -1,8 +1,9 @@
 ### NamuLuck
 
+![image](https://github.com/howooyeon/NamuLuck/assets/109477788/be1a88f1-dff2-41e7-9dbd-8135d8749e27)
 NamuLuck
 나무를 키워 수확한 열매로 못난이 농수산물 구매하자 !!
-![image](https://github.com/howooyeon/NamuLuck/assets/109477788/be1a88f1-dff2-41e7-9dbd-8135d8749e27)
+
 
 ## 목차
 - 홈화면
@@ -10,8 +11,6 @@ NamuLuck
 - 퀴즈
 - 쇼핑
 - 마이페이지
-
-
 ![image](https://github.com/howooyeon/NamuLuck/assets/109477788/3d2e8046-ac86-44cd-a2fd-0a46fdbb5567)
 
 
@@ -31,6 +30,12 @@ NamuLuck
 완벽한 외형이 아니란 이유로 
 맛도 영양도 다를 바 없는 농산물이
 전체 생산량의 1/3이나 되고 있습니다.
+
+우리는 '못난이 채소'를 구해야 합니다. 
+
+그럼으로써 농산물 1,501,045kg 물 30,321ml 플라스틱 208,508kg 절감한 탄소 897,475kg 를 절약할 수 있습니다. 
+
+
 
 지속가능한 농업을 지지함으로써 우리의 땅과 미래를 더 건강하게 만들 수 있습니다.
 
