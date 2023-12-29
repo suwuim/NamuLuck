@@ -1,8 +1,8 @@
 ### NamuLuck
 
 ![image](https://github.com/howooyeon/NamuLuck/assets/109477788/be1a88f1-dff2-41e7-9dbd-8135d8749e27)
-NamuLuck
 
+NamuLuck
 나무를 키워 수확한 열매로 못난이 농수산물 구매하자 !!
 
 
