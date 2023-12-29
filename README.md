@@ -2,15 +2,16 @@
 
 NamuLuck
 나무를 키워 수확한 열매로 못난이 농수산물 구매하자 !!
-![logo.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/52fd9864-8b69-4231-ba87-e6fd277953d1/666c299b-09eb-400a-808c-94158422a82d/logo.png)
 ![image](https://github.com/howooyeon/NamuLuck/assets/109477788/be1a88f1-dff2-41e7-9dbd-8135d8749e27)
 
 ## 목차
-[홈화면]
-[나무키우기]
-[퀴즈]
-[쇼핑]
-[마이페이지]
+- 홈화면
+- 나무키우기
+- 퀴즈
+- 쇼핑
+- 마이페이지
+![image](https://github.com/howooyeon/NamuLuck/assets/109477788/3d2e8046-ac86-44cd-a2fd-0a46fdbb5567)
+
 
 
 ## 개요
