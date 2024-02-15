@@ -1,0 +1,161 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #454411;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    border-bottom: 1px solid #D7DCA2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* 헤더를 다른 요소들 위에 두기 위한 z-index 설정 */
+}
+
+#headerArea {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#headerLeft {
+    display: flex;
+    align-items: center;
+    margin-right: 4px;
+}
+
+#logo {
+    height: 52px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #454411;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
+#loginbtn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #D7DCA2;
+    border-radius: 50px;
+    background-color: white;
+}
+
+#loginbtn a {
+    color: #454411;
+    text-decoration: none;
+}
+
+.content {
+    width: 100%;
+    margin-top: 100px;
+    height: calc(100vh - 100px); 
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    width: 100%;
+    height: 340px;
+    background-image: url(../../resources/images/shopbg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.textarea {
+    width: 1000px;   
+}
+
+#shop {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 28px;
+    position: relative;
+}
+
+#shop_sub {
+    font-size: 16px;
+    text-align: left;
+    margin-top: 16px;
+    position: relative;
+}
+
+#products {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 60px;
+    color: black;
+}
+
+#product {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: black;
+    gap: 12px;
+}
+
+#productimg {
+    border-radius: 15px;
+    width: 320px;
+}
+
+#productname {
+    text-align: left;
+    font-size: 16px;
+}
+
+#productprice {
+    text-align: left;
+    font-size: 14px;
+}

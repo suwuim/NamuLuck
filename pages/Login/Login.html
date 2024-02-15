@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+        <title>NamuLuck</title>
+
+        <link href="Login.css" rel="stylesheet"></li>
+    </head>
+    
+    <body>
+    <header>
+        <div id="headerArea">
+        <div id="headerLeft">
+        <input id="logo" type="image" src="../../resources/images/logo.png" alt="NamuLuck logo" onclick="location.href='../index.html'">
+        <nav>
+            <ul id = "nav">
+                <li><a href="../Grow/Grow.html">키우기</a></li>
+                <li><a href="../Quiz/Quiz.html">퀴즈</a></li>
+                <li><a href="../Shop/Shop.html">쇼핑</a></li>
+                <li><a href="../Mypage/Mypage.html">마이페이지</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div id="headerRight">
+            <button id="loginbtn"><a href="../Login/Login.html">로그인</a></button>
+        </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <div id="login">
+            <div>로그인 • 회원가입</div>
+            <button onclick="googleLogin()">
+            <img src="../../resources/images/google.svg.png" alt="google">
+            구글로 계속하기
+            </button>
+
+            <!-- <script>
+                // 클라이언트 ID는 구글 개발자 콘솔에서 생성한 것을 사용해야 합니다.
+                const CLIENT_ID = '';
+                const REDIRECT_URI = ''; // 리다이렉트 URI는 개발자 콘솔에서 설정한 것을 사용해야 합니다.
+                const SCOPE = 'profile email'; // 필요한 권한을 설정합니다.
+                
+                function googleLogin() {
+                    // OAuth 2.0 인증 요청 URL 생성
+                    const authUrl = `https://accounts.google.com/o/oauth2/auth?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=token&scope=${SCOPE}`;
+                
+                    // 사용자를 구글 로그인 페이지로 리다이렉트
+                    window.location.href = authUrl;
+                }
+                </script> -->
+
+        </div>
+    </div>
+    
+    </body>
+</html>

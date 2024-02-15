@@ -1,0 +1,128 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #454411;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    border-bottom: 1px solid #D7DCA2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* 헤더를 다른 요소들 위에 두기 위한 z-index 설정 */
+}
+
+#headerArea {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#headerLeft {
+    display: flex;
+    align-items: center;
+    margin-right: 4px;
+}
+
+#logo {
+    height: 52px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #454411;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
+#loginbtn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #D7DCA2;
+    border-radius: 50px;
+    background-color: white;
+}
+
+#loginbtn a {
+    color: #454411;
+    text-decoration: none;
+}
+
+.content {
+    width: 100%;
+    margin-top: 100px;
+    height: calc(100vh - 100px); 
+    background-image: url('../../resources/images/loginbg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+}
+
+#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#login > div {
+    margin-bottom: 36px; /* 로그인 • 회원가입과 버튼 사이의 간격 조절 */
+}
+
+#login button {
+    display: flex;
+    width: 448px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff; /* 버튼 배경색 */
+    color: #454411; /* 버튼 텍스트 색상 */
+    border: 1px solid #D7DCA2;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#login button img {
+    width: 30px; /* 이미지의 가로 크기 */
+    height: 30px; /* 이미지의 세로 크기 */
+    margin-right: 16px; /* 이미지와 텍스트 사이의 간격 조절 */
+}

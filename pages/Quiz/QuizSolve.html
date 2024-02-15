@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+        <title>NamuLuck</title>
+
+        <link href="Quiz.css" rel="stylesheet"></li>
+    </head>
+    
+    <body>
+    <header>
+        <div id="headerArea">
+        <div id="headerLeft">
+        <input id="logo" type="image" src="../../resources/images/logo.png" alt="NamuLuck logo" onclick="location.href='../index.html'">
+        <nav>
+            <ul id = "nav">
+              <li><a href="../Grow/Grow.html">키우기</a></li>
+              <li><a href="../Quiz/Quiz.html">퀴즈</a></li>
+              <li><a href="../Shop/Shop.html">쇼핑</a></li>
+              <li><a href="../Mypage/Mypage.html">마이페이지</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div id="headerRight">
+            <button id="loginbtn"><a href="../Login/Login.html">로그인</a></button>
+        </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="banner">
+            <div class="textarea">
+                <div id="quiz">Quiz</div>
+                <div id="quiz_sub">유튜브 영상 시청 후 포인트 얻기</div>
+            </div>
+        </div>
+
+        <div id="videoarea">
+            <div id="question"> 
+                Q. 000은 못난이 농산물을 해결하기 위한 움직임을 뜻하는 말이다
+            </div>
+            <div id="question"> 
+                이때 000 안에 들어갈 말로 옳은 것은? 
+            </div>
+            <button id="answer1">1. 두부리퍼브</button>
+            <button id="answer2">2. 푸드리시브</button>
+            <button id="answer3">3. 푸드리퍼브</button>
+            <button id="answer4">4. 푸주리버블</button>
+
+            <script>
+                var correctAnswer = 3;
+            
+                var answerButtons = document.querySelectorAll('button');
+            
+                answerButtons.forEach(function(button) {
+                    button.addEventListener('click', function() {
+                        var selectedAnswer = parseInt(button.id.replace('answer', ''));
+            
+                        if (selectedAnswer === correctAnswer) {
+                            alert('정답입니다! 물 1개를 획득하셨습니다.');
+                        } else {
+                            alert('오답입니다!');
+                        }
+                    });
+                });
+            </script>
+                
+        </div>
+
+    </div>
+    
+    </body>
+</html>
